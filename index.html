@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon Placeholder-->
+    <link rel="icon" type="image/svg+xml" href="/icons/circle-user-solid.svg" />
+    <title>B. Jackson | Software Engineer</title>
+  </head>
+  <body id="body" class="min-h-screen 
+      bg-no-repeat bg-gradient-to-t from-stone-400 to-neutral-400 dark:from-zinc-700 dark:to-zinc-500">
+
+      <!--Header Section-->
+      <header id="banner" class="fixed top-0 left-0 right-0 z-50 
+        bg-neutral-300 dark:bg-zinc-700 dark:text-gray-100 
+        border-b border-zinc-700 dark:border-neutral-300 shadow-lg">
+        <!--Header Container-->
+        <div 
+        class="
+        flex items-center justify-between 
+        mx-auto max-w-full h-[195px] md:h-[250px]
+        transition-shadow duration-200">
+          <!--Dark Toggle Container-->
+          <div id="theme-container" class="border-2 border-gray-500 bg-neutral-300 
+            rounded-full space-x-1 pr-1 
+            fixed left-1 top-1 
+            flex items-center justify-start 
+            cursor-pointer">
+            <!--Dark Mode Toggle-->
+            <button id="theme-toggle" type="button" role="switch"  aria-checked="false" aria-label="Toggle Theme"
+            class="theme-toggle">
+              <span 
+              class="theme-toggle-knob"></span>
+            </button>
+            <!--Dark Mode Icon-->
+            <img id="theme-icon" src="/icons/sun-regular-full.svg" class="h-7 w-7" alt="Theme Icon" />
+          </div>
+          <!--Header Container-->
+          <div class="
+            flex items-center justify-evenly 
+            space-x-4 
+            w-full max-h-full 
+            p-2 
+            lg:mx-4 mx-auto">
+            <!--Logo/Avatar-->
+            <div id="logo" class="flex items-center justify-center w-1/5 md:px-4">
+              <span class="logo-circle">
+                <img src="/images/avatar.jpg" class="block w-full h-full 
+                  object-cover rounded-full ring-4 ring-zinc-500 dark:ring-neutral-400" alt="Avatar" />
+              </span>
+            </div>
+            <!--About Section-->
+            <div id="about" class="hidden relative self-start top-0 md:block md:w-3/5 max-w-[620px] md:max-w-[585px] h-[200px] text-justify">
+              <!--About Me Header-->
+              <h1 class="sticky top-0 pb-1 md:pb-2 lg:pb-4 w-full text-center text-2xl font-semibold">Hi there! I'm a software engineer.</h1>
+              <!--About Me Content-->
+              <p class="text-sm leading-[1.125rem]">
+                My name is Beren. In my career I've gained a lot of experience designing UI and software applications to meet the needs of companies in industries such as telemetry, energy monitoring and water management. I'm passionate about my craft, and I enjoy providing efficient, elegant solutions to make the lives of my clients easier. This page showcases some examples of small, interest-inspired hobby projects I've created in my spare time.  
+              </p>
+              <p class="text-sm leading-[1.125rem] pt-[3px]">
+                Get in touch with me via LinkedIn or send me an email if you'd like to work with me. I'd love to hear about your projects!
+              </p>
+            </div>
+            <!--Social Icons Container-->
+            <div id="social-icons" class="
+            flex flex-row md:flex-col 
+            items-center 
+            justify-center md:justify-evenly 
+            space-x-6 md:space-x-0 md:space-y-4 
+            w-3/5 md:w-1/5 h-full 
+            px-4">
+            <a href="https://linkedin.com/in/beren-jackson" target="_blank" title="LinkedIn">
+              <img src="/icons/LinkedIn.svg" class="social-icon dark:bg-zinc-700" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/berenrj/" target="_blank" title="GitHub">
+              <img id="github-icon" src="/icons/GitHub.svg" class="social-icon dark:bg-zinc-700" alt="GitHub" />
+            </a>
+            <a id="mail-link" aria-label="Email Me" title="Email Me">
+              <img id="mail-icon" src="/icons/envelope-solid.svg" class="social-icon dark:bg-zinc-700" alt="Email" />
+            </a>  
+            </div>
+            <!--Hamburger Button (Mobile Only)-->
+            <button class="w-1/5 md:hidden flex items-center justify-center" aria-expanded="false" aria-label="Expand Banner">
+              <img src="/icons/bars-solid.svg" class="w-[60px] h-[60px] 
+                p-1 border border-neutral-400 dark:border-neutral-200 
+                rounded-md shadow-sm hover:shadow-md 
+                dark:hover:shadow-neutral-300 dark:hover:shadow-sm dark:bg-neutral-400" alt="Bars" />
+            </button>            
+          </div>
+        </div>
+
+        <!--About Me (Mobile Only Section)-->
+        <div id="about-expanded" class="md:hidden
+            overflow-hidden
+            transition-all duration-75
+            max-h-0 h-[215px]">
+          <div class="flex flex-col items-center justify-between px-4 pb-4 w-full border-t border-zinc-700 dark:border-neutral-300 text-justify mx-auto">
+            <h1 class="py-1 text-center text-xl font-semibold max-w-[620px] sm:pb-3">
+              Hi there! I'm a software engineer.
+            </h1>
+            <p class="text-sm leading-[1.125rem] max-w-[620px]">
+              My name is Beren. In my career I've gained a lot of experience designing UI and software applications to meet the needs of companies in industries such as telemetry, energy monitoring and water management. I'm passionate about my craft, and I enjoy providing efficient, elegant solutions to make the lives of my clients easier. This page showcases some examples of small, interest-inspired hobby projects I've created in my spare time.
+            </p>
+            <p class="text-sm leading-[1.125rem] pt-[3px] max-w-[620px]">
+                Get in touch with me via LinkedIn or send me an email if you'd like to work with me. I'd love to hear about your projects!
+            </p>
+          </div>
+        </div>
+
+      </header>
+
+      <!--Projects Section-->
+      <main id="main" class="rounded-md pt-[215px] md:pt-[270px] 
+       overflow-y-auto transition-all duration-75">
+
+       <h1 class="mx-auto mb-7 w-full text-center text-2xl font-semibold dark:text-gray-100">
+        Personal Projects
+      </h1>
+
+        <!--Project Card Container-->
+        <div class="card-container">
+
+          <a id="card" class="card group" href="https://berenrj.github.io/mode-sounds/" target="_blank">
+            <!--Image Container-->
+            <div class="card-img-container overflow-hidden">
+              <img id="card-img" class="card-img group-hover:scale-105 group-hover:duration-500" 
+              src="https://github.com/berenrj/mode-sounds/releases/download/v1.0.0/mode-sounds_example1.PNG" 
+              alt="Project Image" />
+            </div>
+            <!--Description Container-->
+            <div class="w-full h-[33%] border border-zinc-700 dark:border-neutral-300 rounded-b-md">
+              <!--Project Title-->
+              <h1 class="flex items-center justify-center w-full h-2/3 font-semibold text-lg mx-auto">
+                Musical Scales & Chord Sounds
+              </h1>
+              <hr class="h-px border-0 bg-zinc-700 dark:bg-neutral-300"/>
+              <!--Skill Icons Container-->
+              <div class="flex w-full h-1/3 items-center justify-evenly">
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Vue.js.svg" class="w-8 h-8" alt="Vue.js" />
+                  <span>Vue.js</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Bootstrap.svg" class="w-8 h-8" alt="Bootstrap" />
+                  <span>Bootstrap</span>
+                </div>               
+              </div>
+            </div>
+          </a>
+          
+          <a id="card" class="card group" href="https://berenrj.github.io/football-fixture-acca-builder/" target="_blank">
+            <!--Image Container-->
+            <div class="card-img-container overflow-hidden">
+              <img id="card-img" class="card-img group-hover:scale-105 group-hover:duration-500" 
+              src="https://github.com/berenrj/football-fixture-acca-builder/releases/download/v1.0.0/football-fixture-acca-builder_3.PNG" 
+              alt="Project Image" />
+            </div>
+            <!--Description Container-->
+            <div class="w-full h-[33%] border border-zinc-700 dark:border-neutral-300 rounded-b-md">
+              <!--Project Title-->
+              <h1 class="flex items-center justify-center w-full h-2/3 font-semibold text-lg mx-auto">
+                Football Fixtures Accumulator Builder
+              </h1>
+              <hr class="h-px border-0 bg-zinc-700 dark:bg-neutral-300"/>
+              <!--Skill Icons Container-->
+              <div class="flex w-full h-1/3 items-center justify-evenly">
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Vue.js.svg" class="w-8 h-8" alt="Vue.js" />
+                  <span>Vue.js</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Bootstrap.svg" class="w-8 h-8" alt="Bootstrap" />
+                  <span>Bootstrap</span>
+                </div>               
+              </div>
+            </div>
+          </a>
+          
+          <a id="card" class="card group" href="https://berenrj.github.io/tempo-track-creator/" target="_blank">
+            <!--Image Container-->
+            <div class="card-img-container overflow-hidden">
+              <img id="card-img" class="card-img group-hover:scale-105 group-hover:duration-500" 
+              src="https://github.com/berenrj/tempo-track-creator/releases/download/v1.0.0/tempo-track-creator_example1.PNG" 
+              alt="Project Image" />
+            </div>
+            <!--Description Container-->
+            <div class="w-full h-[33%] border border-zinc-700 dark:border-neutral-300 rounded-b-md">
+              <!--Project Title-->
+              <h1 class="flex items-center justify-center w-full h-2/3 font-semibold text-lg mx-auto">
+                Tempo Track PDF Creator
+              </h1>
+              <hr class="h-px border-0 bg-zinc-700 dark:bg-neutral-300"/>
+              <!--Skill Icons Container-->
+              <div class="flex w-full h-1/3 items-center justify-evenly">
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Vue.js.svg" class="w-8 h-8" alt="Vue.js" />
+                  <span>Vue.js</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Bootstrap.svg" class="w-8 h-8" alt="Bootstrap" />
+                  <span>Bootstrap</span>
+                </div>               
+              </div>
+            </div>
+          </a>
+          
+          <a id="card" class="card group" href="https://etf-dashboard-berenrj.streamlit.app/" target="_blank">
+            <!--Image Container-->
+            <div class="card-img-container overflow-hidden">
+              <img id="card-img" class="card-img group-hover:scale-105 group-hover:duration-500" 
+              src="https://github.com/berenrj/etf-dashboard/releases/download/v1.0.0/etf-dashboard.PNG" 
+              alt="Project Image" />
+            </div>
+            <!--Description Container-->
+            <div class="w-full h-[33%] border border-zinc-700 dark:border-neutral-300 rounded-b-md">
+              <!--Project Title-->
+              <h1 class="flex items-center justify-center w-full h-2/3 font-semibold text-lg mx-auto">
+                ETF Summary Dashboard
+              </h1>
+              <hr class="h-px border-0 bg-zinc-700 dark:bg-neutral-300"/>
+              <!--Skill Icons Container-->
+              <div class="flex w-full h-1/3 items-center justify-evenly">
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Python.svg" class="w-8 h-8" alt="Python" />
+                  <span>Python</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Pandas.svg" class="w-8 h-8" alt="Pandas" />
+                  <span>Pandas</span>
+                </div>                
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Streamlit.svg" class="w-8 h-8" alt="Streamlit" />
+                  <span>Streamlit</span>
+                </div>                
+              </div>
+            </div>
+          </a>
+          
+          <a id="card" class="card group" href="https://github.com/berenrj/currency-converter" target="_blank">
+            <!--Image Container-->
+            <div class="card-img-container overflow-hidden">
+              <img id="card-img" class="card-img group-hover:scale-105 group-hover:duration-500" 
+              src="https://github.com/berenrj/currency-converter/releases/download/v1.0.0/example2.PNG" 
+              alt="Project Image" />
+            </div>
+            <!--Description Container-->
+            <div class="w-full h-[33%] border border-zinc-700 dark:border-neutral-300 rounded-b-md">
+              <!--Project Title-->
+              <h1 class="flex items-center justify-center w-full h-2/3 font-semibold text-lg mx-auto">
+                Currency Converter (GBP/PHP)
+              </h1>
+              <hr class="h-px border-0 bg-zinc-700 dark:bg-neutral-300"/>
+              <!--Skill Icons Container-->
+              <div class="flex w-full h-1/3 items-center justify-evenly">
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Python.svg" class="w-8 h-8" alt="Python" />
+                  <span>Python</span>
+                </div>               
+              </div>
+            </div>
+          </a>
+          
+          <!--View More Button-->
+          <a href="https://github.com/berenrj/" class="more-btn group" target="_blank">
+            <span class="-translate-y-[1.6px]">View More</span>
+            <img id="more-icon" src="/icons/arrow-right-solid-full-white.svg" 
+            class="block w-4 h-4 ml-[5.5px]
+            transform transition-transform duration-100 group-hover:translate-x-[6px]" alt="Right Arrow"/>
+          </a>
+
+        </div>
+
+      </main>
+  
+    <!--Scripts-->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

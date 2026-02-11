@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional reusable styles */
+@layer components {
+
+  .card-container {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:max-w-[1800px] gap-6 lg:gap-4 md:px-6 mx-auto pb-6 justify-items-center md:justify-stretch;
+  }
+
+  .card {
+    @apply relative flex flex-col border border-zinc-800 dark:border-gray-400 rounded-lg 
+    w-4/5 h-[370px] max-w-[440px] max-h-[400px] md:w-full md:min-h-80
+    bg-gradient-to-t from-zinc-700 to-zinc-500 text-gray-100 
+    dark:from-stone-400 dark:to-neutral-400 dark:text-black p-1 
+    shadow-lg hover:shadow-slate-300 
+    dark:hover:shadow-gray-900 hover:duration-300 cursor-pointer z-0 text-center;
+  }
+
+  .card-img-container {
+    @apply w-full h-2/3 overflow-hidden rounded-t-md border border-gray-400;
+  }
+
+  .card-img {
+    @apply block w-full h-full object-cover;
+  }
+
+  .more-btn {
+    @apply 
+    inline-flex items-center justify-center
+    ring-2 ring-gray-300 hover:ring-gray-100
+    mx-auto my-6 md:my-auto
+    w-36 h-12
+    bg-gradient-to-r from-sky-600 to-teal-600 text-white
+    p-4 font-semibold text-center
+    rounded-md z-0
+    shadow-md hover:shadow-slate-300 dark:hover:shadow-gray-900
+    dark:from-amber-600 dark:to-yellow-400 dark:text-black;
+  }
+
+  .logo-circle {
+    @apply h-[96px] w-[96px] bg-white rounded-full inline-block;
+  }
+
+  .social-icon {
+    @apply w-10 h-10 p-[2px] rounded-md cursor-pointer hover:ring-2 hover:ring-blue-400 hover:shadow-md;
+  }
+
+  .theme-toggle {
+    @apply relative inline-flex h-8 w-14 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+
+  .theme-toggle[aria-checked="false"] {
+    @apply bg-gray-500;
+  }
+
+  .theme-toggle[aria-checked="true"] {
+    @apply bg-white;
+  }
+
+  .theme-toggle-knob {
+    @apply inline-block h-6 w-6 transform rounded-full transition-transform translate-x-1 duration-75;
+  }
+
+  .theme-toggle[aria-checked="false"] .theme-toggle-knob {
+    @apply translate-x-1 bg-white;
+  }
+
+  .theme-toggle[aria-checked="true"] .theme-toggle-knob {
+    @apply translate-x-7 bg-gray-500;
+  }
+
+}
+
+@media (min-width: 768px) {
+  #about-expanded {
+    transition: none;
+  }
+}
