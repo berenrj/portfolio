@@ -1,5 +1,26 @@
 import './style.css'
 
+const BASE = import.meta.env.BASE_URL || '/portfolio/';
+
+// Preload dark theme icons
+const icons = [
+  "sun-regular-full.svg",
+  "moon-solid-full.svg",
+  "GitHub.svg",
+  "GitHub-white.svg",
+  "envelope-solid.svg",
+  "envelope-solid-white.svg",
+  "arrow-right-solid-full-black.svg",
+  "arrow-right-solid-full-white.svg",
+  "chevron-up-solid.svg",
+  "bars-solid.svg"  
+];
+
+icons.forEach(file => {
+  const img = new Image();
+  img.src = `${BASE}icons/${file}`;
+});
+
 // Element Refs
 const html = document.documentElement;
 const main = document.getElementById("main");
@@ -30,7 +51,7 @@ const expandHeader = () => {
 
   main.classList.add("pt-[436px]");
 
-  btnIcon.src = "/icons/chevron-up-solid.svg";
+  btnIcon.src = `${BASE}icons/chevron-up-solid.svg`;
   btn.setAttribute("aria-expanded", "true");
 }
 
@@ -42,22 +63,22 @@ const collapseHeader = () => {
 
   main.classList.remove("pt-[436px]");
 
-  btnIcon.src = "/icons/bars-solid.svg";
+  btnIcon.src = `${BASE}icons/bars-solid.svg`;
   btn.setAttribute("aria-expanded", "false");
 }
 
 const toggleTheme = darkTheme => {
   if (darkTheme) {
-    themeIcon.src = "/icons/moon-solid-full.svg";
-    gitHubIcon.src = "/icons/GitHub-white.svg";
-    mailIcon.src = "/icons/envelope-solid-white.svg";
-    moreIcon.src = "/icons/arrow-right-solid-full-black.svg";
+    themeIcon.src = `${BASE}icons/moon-solid-full.svg`;
+    gitHubIcon.src = `${BASE}icons/GitHub-white.svg`;
+    mailIcon.src = `${BASE}icons/envelope-solid-white.svg`;
+    moreIcon.src = `${BASE}icons/arrow-right-solid-full-black.svg`;
     applyDarkTheme();
   } else {
-    themeIcon.src = "/icons/sun-regular-full.svg";
-    gitHubIcon.src = "/icons/GitHub.svg";
-    mailIcon.src = "/icons/envelope-solid.svg";
-    moreIcon.src = "/icons/arrow-right-solid-full-white.svg";
+    themeIcon.src = `${BASE}icons/sun-regular-full.svg`;
+    gitHubIcon.src = `${BASE}icons/GitHub.svg`;
+    mailIcon.src = `${BASE}icons/envelope-solid.svg`;
+    moreIcon.src = `${BASE}icons/arrow-right-solid-full-white.svg`;
     removeDarkTheme();
   }
 }
