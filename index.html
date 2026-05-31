@@ -3,8 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Favicon Placeholder-->
+    <meta name="description" content="Portfolio site for small software development projects and web apps made by B. Jackson." />
+    <meta name="author" content="Beren Jackson" />
+    <meta name="keywords" content="portfolio, portfolio site, software, engineer, software engineer, developer, web developer, programmer, frontend, frontend developer, coding, react, tailwind, vue, javascript, react-app, vite" />
+    <!--Open Graph Tags-->
+    <meta property="og:title" content="B. Jackson | Software Engineer" />
+    <meta property="og:description" content="Portfolio site for small software development projects and web apps made by B. Jackson." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://berenrj.github.io/portfolio/" />
+    <meta property="og:image" content="https://berenrj.github.io/portfolio/preview.png" />
+    <!--Theme Colour (Mobile Browsers)-->
+    <meta name="theme-color" content="#000000" />        
+    <!--Favicon-->
     <link rel="icon" type="image/svg+xml" href="/icons/circle-user-solid.svg" />
+    <!--Title-->
     <title>B. Jackson | Software Engineer</title>
   </head>
   <body id="body" class="min-h-screen 
@@ -18,7 +30,7 @@
         <div 
         class="
         flex items-center justify-between 
-        mx-auto max-w-full h-[195px] md:h-[250px]
+        mx-auto max-w-full lg:max-w-[1800px] h-[195px] md:h-[250px]
         transition-shadow duration-200">
           <!--Dark Toggle Container-->
           <div id="theme-container" class="border-2 border-gray-500 bg-neutral-300 
@@ -113,12 +125,40 @@
       <main id="main" class="rounded-md pt-[215px] md:pt-[270px] 
        overflow-y-auto transition-all duration-75">
 
-       <h1 class="mx-auto mb-7 w-full text-center text-2xl font-semibold dark:text-gray-100">
+      <h1 class="mx-auto mb-7 w-full text-center text-2xl font-semibold dark:text-gray-100">
         Personal Projects
       </h1>
 
         <!--Project Card Container-->
         <div class="card-container">
+          
+          <a id="card" class="card group" href="https://berenrj.github.io/pokemon-search/" target="_blank">
+            <!--Image Container-->
+            <div class="card-img-container overflow-hidden">
+              <img id="card-img" class="card-img group-hover:scale-105 group-hover:duration-500" 
+              src="https://github.com/berenrj/pokemon-search/releases/download/1.0.0/pokemon-search_04.PNG" 
+              alt="Project Image" />
+            </div>
+            <!--Description Container-->
+            <div class="w-full h-[33%] border border-zinc-700 dark:border-neutral-300 rounded-b-md">
+              <!--Project Title-->
+              <h1 class="flex items-center justify-center w-full h-2/3 font-semibold text-lg mx-auto">
+                Pokémon Search
+              </h1>
+              <hr class="h-px border-0 bg-zinc-700 dark:bg-neutral-300"/>
+              <!--Skill Icons Container-->
+              <div class="flex w-full h-1/3 items-center justify-evenly">
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/React.svg" class="w-8 h-8" alt="React.js" />
+                  <span>React.js</span>
+                </div>
+                <div class="flex items-center space-x-2 text-sm">
+                  <img src="/icons/Tailwind-CSS.svg" class="w-8 h-8" alt="Tailwind" />
+                  <span>Tailwind</span>
+                </div>               
+              </div>
+            </div>
+          </a>          
 
           <a id="card" class="card group" href="https://berenrj.github.io/mode-sounds/" target="_blank">
             <!--Image Container-->
@@ -261,7 +301,7 @@
           </a>
           
           <!--View More Button-->
-          <a href="https://github.com/berenrj/" class="more-btn group" target="_blank">
+          <a href="https://github.com/berenrj/" class="more-btn group" id="button-wrapper" target="_blank">
             <span class="-translate-y-[1.6px]">View More</span>
             <img id="more-icon" src="/icons/arrow-right-solid-full-white.svg" 
             class="block w-4 h-4 ml-[5.5px]

@@ -35,6 +35,8 @@ const moreIcon = document.getElementById("more-icon");
 const gitHubIcon = document.getElementById("github-icon");
 const mailIcon = document.getElementById("mail-icon");
 const mailLink = document.getElementById("mail-link");
+const cards = document.querySelectorAll('.card');
+const viewMoreBtn = document.querySelector('.more-btn');
 // store breakpoint for resetting expansion state
 const mdBreakpoint = window.matchMedia("(min-width: 768px)");
 
@@ -90,6 +92,13 @@ const applyDarkTheme = () => {
 
 const removeDarkTheme = () => {
   html.classList.remove("dark");
+}
+
+// Center viewMoreBtn if even number of cards
+if (cards.length % 2 === 0) {
+  viewMoreBtn.classList.add('col-span-full');
+} else {
+viewMoreBtn.classList.remove('col-span-full');
 }
 
 // Event Listeners

@@ -6,7 +6,7 @@
 @layer components {
 
   .card-container {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:max-w-[1800px] gap-6 lg:gap-4 md:px-6 mx-auto pb-6 justify-items-center md:justify-stretch;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:max-w-[1600px] gap-6 lg:gap-4 md:px-6 mx-auto pb-6 justify-items-center md:justify-stretch;
   }
 
   .card {
